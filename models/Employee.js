@@ -86,6 +86,20 @@ class Employee {
         });
     }
 
+    // Mengambil data berdasarkan Status Active/Inactive
+    static Status(Status) {
+        return new Promise((resolve, reject) => {
+            const sql = 'SELECT * FROM employees WHERE Status = ?';
+            db.query(sql, Status, (err, results) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(results);
+                }
+            });
+         });
+    }
+
 }
 
 // export model

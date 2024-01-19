@@ -149,7 +149,34 @@ class EmployeeController {
 
 }
 
-  
+async status(req, res) {
+    /**
+     * cari id
+     * jika ada, kirim datanya
+     * jika tidak, kirim data tidak ada
+     */
+    const { Status } = req.params;
+
+    const employee = await Employee.Status(Status);
+
+    if (employee) {
+        const data = {
+            message: "Menampilkan detail data pegawai berdasarkan Status Active dan Inactive",
+            data: employee,
+        };
+
+        res.status(200).json(data);
+    }
+    else {
+        const data = {
+            message: "Data tidak ditemukan",
+        };
+
+        res.status(404).json(data);
+    }
+
+}
+
 }
 
 

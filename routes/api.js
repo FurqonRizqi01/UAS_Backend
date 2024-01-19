@@ -28,7 +28,7 @@ router.get("/employees/:id", EmployeeController.show);
 // Mengambil data berdasarkan nama
 router.get('/employees/search/:name', EmployeeController.search);
 // Mencarai data berdasarkan status active
-router.get("/employees/search/active", EmployeeController.active);
+router.get("/employees/status/:Status", EmployeeController.status);
 // router.get("/employees/status/inactive", EmployeeController.inactive);
 // router.get("/employees/status/terminated", EmployeeController.terminated);
 
