@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Jan 2024 pada 07.12
+-- Waktu pembuatan: 19 Jan 2024 pada 08.07
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -47,7 +47,8 @@ INSERT INTO `employees` (`id`, `Nama_Pegawai`, `Jenis_Kelamin`, `No_Hp`, `Alamat
 (1, 'Muhammad Furqon Rizqi', 'Laki-laki', '0895332162678', 'BSI 2', 'uqon@gmail.com', 'Active', '2024-01-19', '2024-01-19 04:33:43'),
 (2, 'Aisyah', 'Perempuan', '0128282829', 'jl.melati', 'aisyah@gmail.com', 'Active', '2024-01-19', '2024-01-19 04:33:49'),
 (4, 'Vanessa', 'Perempuan', '0134883484', 'jl.bulan', 'vanessa@gmail.com', 'InActive', '2019-07-11', '2024-01-19 04:23:03'),
-(5, 'Harry', 'Laki-laki', '0128823634', 'jl.mars', 'harry@gmail.com', 'InActive', '2018-10-05', '2024-01-19 04:24:26');
+(5, 'Harry', 'Laki-laki', '0128823634', 'jl.mars', 'harry@gmail.com', 'InActive', '2018-10-05', '2024-01-19 04:24:26'),
+(6, 'Fauzi', 'Laki-laki', '0128298473', 'jl.pluto', 'fauzi@gmail.com', 'Terminated', '2023-09-09', '2024-01-19 07:05:36');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +68,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT untuk tabel `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
